@@ -1,0 +1,8 @@
+Important! Editing your .htaccess file could break your site if not done correctly. 
+If you are not comfortable doing this, please check with your web host first.
+
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
